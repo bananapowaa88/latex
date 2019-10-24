@@ -1,0 +1,35 @@
+\input amstex
+\input amssym.def
+\UseAMSsymbols
+
+\magnification=1000
+\hsize=12.5cm
+\font\bigletter=cmr10 scaled \magstep1
+\font\bigbold=cmbx10 scaled \magstep1
+\font\smallcap=cmcsc8
+\font\bigcap=cmcsc10
+\font\headl=cmr8
+\font\cursive=cmti10
+\nopagenumbers
+
+\headline{\smallcap\centerline{1. general structure of recurrence sequences}}
+\vskip 0.2cm
+Peth\H o and Zimmer [{\bf 890}] considered the growth of recurrence sequences on elliptic curves. Write the group operation on an elliptic curve $E$ additively, and define a sequence of rational points $(P_x)$ using the recurrence
+$$P_{x+n}=f_{n-1}P_{x+n-1}+\ldots +f_0P_x,\quad x\in \Bbb{N}$$
+for integers $f_0,\ldots ,f_{n-1}.$ It is shown that under some mild conditions the canonical height $h(P_x)$ grows exponentially with $x$.
+
+For sequences --- of many different kinds --- over function fields of zero char\-acteristic much more can be said, because for such fields there is a strong effective result on sums of $S$-units, (see the references mentioned in the Introduction). For example,  Shapiro and Sparer [{\bf 1040}] prove that for any $n \geq 3$ pairwise co-prime polynomials $g_i \in \Bbb{C}[t], i=1,\ldots ,n,$ not all constant, the equation
+$$g_1^x+\ldots +g_n^x=0$$
+does not have any solutions with $x \geq n(n-2)$. Such results in the number field case remain beyond the wildest dreams.
+
+Finally, the requirement in the Skolem--Mahler--Lech Theorem that the char\-acteristic be zero is essential even in infinite fields (the case of sequences over finite fields is evidently special, and is dealt with in Section 2.4). The simplest example that shows this is the cubic recurrence sequence
+$$a(x)=(2z+1)^x-z^x-(z+1)^x,\quad x\in \Bbb{N},$$
+over the function field $\Bbb{F}_p(z).$ It satisfies the non-degenerate recurrence relation
+$$a(x+3)=(4z+2)a(x+2)-(5z^2+5z+1)a(x+1)+(2z^3+3z^2+z)a(x),$$
+and has infinitely many zeros of the form $x=p^k,k=1,2,\ldots$ This is a slight modification of the corresponding example of [{\bf 613}]; see also [{\bf 920}]. This zero-set has a very special structure, so it remains possible that an analogue of the Skolem--Mahler--Lech theorem holds for infinite fields of positive characteristic $p$, with finite sets augmented by sets of the form
+$$\bigcup_{k=1}^{\infty}p^k,$$
+where is a finite set. As a first step in this direction one might try to prove a logarithmic upper bound for the number of zeros $a(x)=0,1\leq x \leq N$ of a non-degenerate linear recurrence sequence $a$ over an arbitrary field. We are not aware of any progress in this direction. The best previously known result is the bound $o(N)$ obtained in [{\bf 89}] following from Szemer\'edi's Theorem. Denis [{\bf 248}] gives further applications and generalizations. For a non-degenerate linear recurrence sequence, Theorem 2.13 gives the effective bound $O(N^{1-\delta_n})$ for the number of zeros among the first $n$ terms of the sequence, where $\delta_n>0$ is defined in section 2.4.
+
+Similar issues arise for $S$-unit equations over $\Bbb{F}_p(t)$, where there are infinite families of non-trivial solutions augmented by exceptional ones; this problem is of importance in finding the mixing structure of $\Bbb{Z}^d$-actions by automorphisms of compact groups [{\bf 289}], [{\bf 536}], [{\bf 537}], [{\bf 695}], [{\bf 1022}], [{\bf 1023,} Chap. {\bf VIII}], [{\bf 1024}].
+
+\bye
