@@ -1,0 +1,42 @@
+\input amstex
+\input amssym.def
+\UseAMSsymbols
+
+\magnification=1000
+\hsize=12.5cm
+\font\bigletter=cmr10 scaled \magstep1
+\font\bigbold=cmbx10 scaled \magstep1
+\font\smallcap=cmcsc8
+\font\bigcap=cmcsc10
+\font\headl=cmr8
+\font\cursive=cmti10
+\nopagenumbers
+
+3.8. {\smallcap T\'etel. }{\sl Ha $a_1,a_2,\ldots,a_k$ p\'aronk\'ent relat\'\i v pr\'\i m pozit\'\i v eg\'esz sz\'a\-mok $(k \geq 2)$, akkor}
+$$\varphi (a_1 a_2 \cdots a_k)=\varphi (a_1)\varphi (a_2)\cdots\varphi(a_k).$$
+{\indent\smallcap Bizony\'\i t\'as.} Alkalmazzunk $k$ szerinti teljes indukci\'ot. $\ssize\blacksquare$
+
+Ha $m(\geq 2)$ kanonikus alakja
+$$m=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_r^{\alpha_r}\quad (\alpha_i \geq 1),$$
+akkor a 3.8. T\'etel alapj\'an
+$$\varphi(m)=\varphi(p_1^{\alpha_1})\varphi(p_2^{\alpha_2})\cdots\varphi(p_r^{\alpha_r}),$$
+ez\'ert $\varphi(m)$ meghat\'aroz\'as\'ahoz elegend\H o a $\varphi (p_i^{\alpha_i})$ \'ert\'ekeket ismerni.
+
+Foglalkozzunk teh\'at $\varphi (p^\alpha)$ meghat\'aroz\'as\'aval, ahol $p$ pr\'\i msz\'am \'es $\alpha \geq 1$ eg\'esz.
+
+Ha $\alpha=1$, akkor $\varphi (p)=p-1$, mivel a $0,1,2,\ldots ,p-1$ eg\'eszek k\"oz\"ul egyed\"ul a 0 nem relat\'\i v pr\'\i m $p$-hez.
+
+Ha $\alpha \geq 2$, akkor $\varphi(p^\alpha)$ jel\"oli a
+$$0,1,2,\ldots p,\ldots ,2p,\ldots ,p^\alpha -1 \leqno (3.1)$$
+sz\'amok k\"oz\"ul $p^\alpha$-hoz (azaz $p$-hez) relat\'\i v pr\'\i mek sz\'am\'at. Sokkal k\"onnyebb meghat\'arozni (3.1)-b\H ol azon elemeket,  amelyek nem relat\'\i v pr\'\i mek $p$-hez. Ezek ugyanis a
+$$0,p,2p,\ldots ,(p^{\alpha -1}-1)p$$
+sz\'amok \'es sz\'amuk $p^{\alpha -1}$. Ez\'ert
+$$\varphi(p^\alpha)=p^\alpha -p^{\alpha-1}=p^\alpha \Big( 1- {1 \over p }\Big).$$
+Ha $m=p_1^{\alpha_1}\cdots p_r^{\alpha_r} (\alpha_i \geq 1)$, akkor
+$$
+\align
+\varphi (m)&=\prod\limits^r_{i=1}\varphi (p^{\alpha_i}_i)=\prod\limits^r_{i=1}(p^{\alpha_i}_i-p^{\alpha_i-1}_i)=\prod\limits^r_{i=1}p^{\alpha_i}_i\Big( 1-{1 \over p_i}\Big)=\\
+&=m\prod\limits^r_{i=1}\Big(1-{1 \over p_i}\Big).
+\endalign
+$$
+\footline{\hfil 53}
