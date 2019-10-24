@@ -1,0 +1,38 @@
+\input amstex
+\input amssym.def
+\UseAMSsymbols
+
+\magnification=1000
+\hsize=12.5cm
+\font\bigletter=cmr10 scaled \magstep1
+\font\bigbold=cmbx10 scaled \magstep1
+\font\smallcap=cmcsc8
+\font\bigcap=cmcsc10
+\font\headl=cmr8
+\font\cursive=cmti10
+\nopagenumbers
+
+\headline{\smallcap\centerline{1.4. the skolem-mahler-lech theorem, multiplicity and growth \hfil 45}}
+\vskip\baselineskip
+{\bigcap Theorem} 1.27. {\cursive Let $\Bbb{K}$ be a field of positive characteristic, and let G be a finitely-generated subgroup of $\Bbb{K^*}$. Suppose that there are constants $a_1,\ldots ,a_n$ in $\Bbb{K}$ for which the equation}
+$$a_1x_1+\cdots +a_nx_n=1$$
+{\cursive has a broad set of solutions $(x_1,\ldots ,x_n\in$ G. Then there exist $b_1,\ldots ,b_n \in \Bbb{K}$ and $g_1,\ldots ,g_n \in$ G with $g_i\neq 1$ and $g_i/g_j \neq 1$ for $i\neq j$ (if $n\geq 2$) such that the equation}
+$$b_1g_1^k+\cdots +b_ng_n^k=1$$
+{\cursive has infinitely many solutions $k \in \Bbb{N}$.}
+\vskip\baselineskip
+Multivariate equations of the form
+$$\sum_{i=1}^{m}A_i(x_1,\ldots ,x_r)\prod_{\nu=1}^{r}\alpha_{i\nu}^{x_\nu}=0$$
+are considered in [{\bf 1011}], where the coefficients $A_i$ are polynomials and the `char\-acteristic roots' $\alpha_{i\nu}$ are elements of an algebraic number field $\Bbb{K}$ of degree $d$ over $\Bbb{Q}$. In this many variable case a uniform upper bound for the number of {\sl all} solutions $(x_1,\ldots ,x_r)$ cannot be expected, so a suitable equivalence relation on the solutions must be factored out and then the number of non-equivalent solutions can be esti\-mated in terms of $m, r, d,$ the number $\omega$ of prime ideal divisors of the $\alpha_{i\nu}$, and the largest degree of the polynomials $A_i$. In [{\bf 1013}] these bounds are improved, and the dependence on $\omega$ is eliminated.
+
+Another natural generalization of linear recurrence sequences are the se\-quences satisfying the recurrence equation (1.5) with rational functions in $x$ as coefficients. Just as the class of linear recurrence sequences coincides with the class of sequences of Taylor coefficients of rational functions, the class of these general\-ized sequences coincides with the class of sequences of power series coefficients of functions satis\-fying linear differential equations with polynomial coefficients.
+
+The first analogue of the Skolem--Mahler--Lech Theorem for such sequences is give in [{\bf 91}] and then, for these and several further types of sequences, in [{\bf 595}]. Some arguments in [{\bf 595}] turned out to be faulty and were fixed in [{\bf 97}]. These papers on power series coefficients of solutions of various differential equations in particular deal with linear combinations of the form
+$$F(X)=\sum_{i=1}^{m}A_i(X)J_s(\beta_iX^t)$$
+where the $A_i$ are formal power series over $\overline{\Bbb{Q}}$ (satisfying some mild conditions) and
+$$J_s(X)=\sum_{j=1}^{\infty}{X^j \over{(j!)^s}}.$$
+This class is quite wide and includes many interesting functions (see Corollaries 1-3 of the main theorem of [{\bf 97}]).
+
+For $q$-recurrence sequences satisfying (1.6), an analog of the Skolem--Mahler--Lech Theorem is given in [{\bf 92}].
+
+All these results are qualitative; van der Poorten and Shparlinski provide the first quantitative results in this direction in [{\bf 936}]. These results were substantially improved by Bezivin [{\bf 95}], but they remain much weaker then those for the case of linear recurrence sequences.
+\bye 
