@@ -1,0 +1,38 @@
+\input amstex
+\input amssym.def
+\UseAMSsymbols
+
+\magnification=1000
+\hsize=12.5cm
+\font\bigletter=cmr10 scaled \magstep1
+\font\bigbold=cmbx10 scaled \magstep1
+\font\smallcap=cmcsc8
+\font\bigcap=cmcsc10
+\font\headl=cmr8
+\font\cursive=cmti10
+\nopagenumbers
+P\'eldak\'ent hat\'arozzuk meg $\varphi(100)$ \'ert\'ek\'et:
+\vskip 1.5cm
+$$\varphi(100)=\varphi(2^2 5^2)=\varphi(2^2)\varphi(5^2)=(2^2 - 2^1)(5^2 - 5^1)=40.$$
+\indent Most t\'erj\"unk vissza a reduk\'alt marad\'ekrendszerek vizsg\'alat\'ara.
+
+3.9. {\smallcap T\'etel. }{\sl Az $r_1,r_2,\ldots ,r_k$ eg\'esz sz\'amok akkor \'es csak akkor alkotnak modulo $m$ reduk\'alt reprezent\'ansrendszert, ha $k=\varphi(m),r_i\not\equiv r_j$ (mod $m$) minden $1\leq i < j \leq \varphi(m)$-re \'es $(r_i,m)=1$ minden $1\leq i\leq \varphi(m)$-re.}
+
+{\smallcap Bizony\'\i t\'as.} A reduk\'alt marad\'ekrendszer \'es a $\varphi$ f\"uggv\'eny defin\'\i ci\'oja alapj\'an az \'all\'\i t\'as nyilv\'anval\'o. $\ssize\blacksquare$
+
+Ha m\'ar adott egy modulo $m$ reduk\'alt reprezent\'ansrendszer, akkor abb\'ol \'ujabb nyerhet\H o a k\"ovetkez\H o t\'etel szerint.
+
+3.10. {\smallcap T\'etel.} {\sl Ha $\{r_1,r_2,\ldots ,r_{\varphi(m)}\}$ modulo $m$ reduk\'alt reprezent\'ans\-rendszer \'es $(c,m)=1$, akkor}
+$$\{cr_1,cr_2,\ldots ,cr_{\varphi(m)}\} \leqno (3.2)$$
+{\sl szint\'en reduk\'alt reprezent\'ansrendszer modulo $m$.}
+
+{\smallcap Bizony\'\i t\'as.} Mivel (3.2)-ben az elemek sz\'ama $\varphi(m)$, \'\i gy a 3.9. T\'etel szerint csak azt kell bizony\'\i tani, hogy (3.2) elemei p\'aronk\'ent inkongruensek \'es a modulushoz relat\'\i v pr\'\i mek. Felhaszn\'alva, hogy $(c,m)=1$ \'es $(r_i,m)=1$ $(i=1,\ldots ,\varphi(m))$, kapjuk a $(cr_i,m)=1$ egyenl\H os\'eget (l\'asd 1.16. T\'etel). (3.2) elemeinek p\'aronk\'enti inkongruenci\'aja indirekt m\'odon k\"onnyen bizony\'\i tha\-t\'o. $\ssize\blacksquare$
+
+A sz\'amelm\'eleti bizony\'\i t\'asokban \'es feladatokban nagyon gyakran alkal\-mazzuk az al\'abbi, \'ugynevezett {\sl Euler--Fermat-t\'etelt.}
+
+3.11. {\smallcap T\'etel. }{\sl Ha $a \in$ {\bf Z} \'es $(a,m)=1$, akkor}
+$$a^{\varphi(m)}\equiv 1\quad (\text{mod } m).$$
+{\indent\smallcap Bizony\'\i t\'as.} Legyen $\{r_1,r_2,\ldots ,r_{\varphi(m)}\}$ modulo $m$ reduk\'alt marad\'ek\-rendszer. Az el\H oz\H o t\'etel szerint, $(a,m)=1$ miatt $\{ar_1,ar_2,\ldots ,ar_{\varphi(m)}\}$ is modulo $m$ reduk\'alt marad\'ekrendszer. \'Igy minden reduk\'alt marad\'ekoszt\'aly\-b\'ol pontosan k\'et reprezent\'ansunk van, az egyik az $\{r_1,r_2,\ldots ,r_{\varphi(m)}\}$, a m\'asik az $\{ar_1,ar_2,\ldots ,ar_{\varphi(m)}\}$ reprezent\'ansrendszerb\H ol. Ezek a reprezen\-t\'ansp\'arok term\'eszetesen kongruensek modulo $m$, \'es \'\i gy
+$$ar_1ar_2\cdots ar_{\varphi(m)}\equiv r_1r_2\cdots r_{\varphi(m)}\quad (\text{mod } m),$$
+\footline{54}
+\bye
